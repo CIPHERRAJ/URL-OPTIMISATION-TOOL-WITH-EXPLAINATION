@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Glossary - SEO URL Optimization Seminar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styling specific to the glossary page */
+        .glossary-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .alphabet-nav {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: sticky;
+            top: 71px;
+            z-index: 100;
+        }
+        
+        .alphabet-nav a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin: 0.25rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50%;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .alphabet-nav a:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .alphabet-nav a.disabled {
+            background-color: #ccc;
+            cursor: not-available;
+            opacity: 0.5;
+        }
+        
+        .glossary-section {
+            margin-bottom: 2rem;
+        }
+        
+        .glossary-entry {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .glossary-entry h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .category-tag {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-left: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .url-tag {
+            background-color: rgba(52, 152, 219, 0.2);
+            color: #3498db;
+            border: 1px solid #3498db;
+        }
+        
+        .internal-tag {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: #27ae60;
+            border: 1px solid #27ae60;
+        }
+        
+        .external-tag {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: #e74c3c;
+            border: 1px solid #e74c3c;
+        }
+        
+        .general-tag {
+            background-color: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
+            border: 1px solid #9b59b6;
+        }
+        
+        .search-container {
+            margin-bottom: 1.5rem;
+        }
+        
+        #glossary-search {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SEO Glossary</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">URL Structure Examples</a></li>
+                <li><a href="page2.html">Internal Linking Case Study</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>SEO, URL, and Linking Terminology</h2>
+            <p>This glossary provides definitions and explanations for key terms related to SEO URL optimization and linking strategies. Use this as a reference guide during the seminar and for future implementation of these concepts on your own websites.</p>
+            
+            <div class="search-container">
+                <input type="text" id="glossary-search" placeholder="Search for terms...">
+            </div>
+            
+            <div class="alphabet-nav">
+                <a href="#section-a">A</a>
+                <a href="#section-b">B</a>
+                <a href="#section-c">C</a>
+                <a href="#section-d">D</a>
+                <a href="#section-e">E</a>
+                <a href="#section-f">F</a>
+                <a href="#section-g">G</a>
+                <a href="#section-h">H</a>
+                <a href="#section-i">I</a>
+                <a href="#section-j" class="disabled">J</a>
+                <a href="#section-k">K</a>
+                <a href="#section-l">L</a>
+                <a href="#section-m">M</a>
+                <a href="#section-n">N</a>
+                <a href="#section-o">O</a>
+                <a href="#section-p">P</a>
+                <a href="#section-q" class="disabled">Q</a>
+                <a href="#section-r">R</a>
+                <a href="#section-s">S</a>
+                <a href="#section-t">T</a>
+                <a href="#section-u">U</a>
+                <a href="#section-v">V</a>
+                <a href="#section-w">W</a>
+                <a href="#section-x" class="disabled">X</a>
+                <a href="#section-y" class="disabled">Y</a>
+                <a href="#section-z" class="disabled">Z</a>
+            </div>
+            
+            <!-- Glossary Entries -->
+            <div class="glossary-container">
+                <!-- A -->
+                <div id="section-a" class="glossary-section">
+                    <h2>A</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Absolute URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A complete web address that includes the protocol (http/https), domain name, and path to a specific page. Example: <code>https://example.com/category/page</code>. Absolute URLs are required for linking to external websites and are sometimes used for internal linking as well.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Anchor Text <span class="category-tag internal-tag">INTERNAL</span> <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>The clickable text in a hyperlink. Anchor text helps search engines understand what the linked page is about and is an important factor in both internal and external linking. Descriptive, keyword-rich anchor text is generally more effective for SEO than generic text like "click here" or "read more".</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Authority <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The perceived trustworthiness and expertise of a website or webpage in the eyes of search engines. Sites with high authority tend to rank better for competitive keywords. Authority is built through quality content, internal linking structure, and external links from other reputable sites.</p>
+                    </div>
+                </div>
+                
+                <!-- B -->
+                <div id="section-b" class="glossary-section">
+                    <h2>B</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Backlink <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>An incoming link to your website from another website. Also known as an inbound link or external link. Backlinks from high-quality, relevant websites are a significant ranking factor for search engines. Internal linking complements a backlink strategy by distributing link equity throughout your site.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Breadcrumb Navigation <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A type of secondary navigation that shows a user's location in a website's hierarchy. Breadcrumbs typically appear at the top of a page and provide links back to each previous page the user navigated through. They improve user experience and help search engines understand site structure.</p>
+                        <p>Example: Home > Category > Subcategory > Current Page</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Broken Link <span class="category-tag internal-tag">INTERNAL</span> <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>A hyperlink that points to a non-existent destination, typically resulting in a 404 error. Broken links can harm user experience and SEO, as they waste crawl budget and signal poor site maintenance. Regular audits should identify and fix broken links.</p>
+                    </div>
+                </div>
+                
+                <!-- C -->
+                <div id="section-c" class="glossary-section">
+                    <h2>C</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Canonical URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>The preferred version of a web page when duplicate or very similar versions exist. Search engines use the canonical URL to determine which version to index and rank. Canonicalization helps prevent duplicate content issues and consolidates link equity.</p>
+                        <p>Example: Using <code>&lt;link rel="canonical" href="https://example.com/preferred-page" /&gt;</code> in the HTML head.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Contextual Link <span class="category-tag internal-tag">INTERNAL</span> <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>A link that appears within the main content of a page, usually embedded within paragraph text. These links are typically more valuable than navigational links because they provide context about the linked content and often use descriptive anchor text.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Crawl Budget <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The number of pages a search engine will crawl on your website within a given timeframe. Effective URL structure and internal linking help search engines use this budget efficiently by prioritizing important pages and avoiding endless crawling of duplicate or low-value URLs.</p>
+                    </div>
+                </div>
+                
+                <!-- D -->
+                <div id="section-d" class="glossary-section">
+                    <h2>D</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Deep Linking <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>The practice of linking to specific, relevant pages deep within a website's hierarchy rather than just the homepage or top-level pages. Deep linking helps users find specific content and helps search engines discover and index deep pages.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Domain Authority <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>A metric developed by Moz that predicts how well a website will rank in search engine results. It's calculated based on various factors including linking patterns. A strong internal linking structure can help improve domain authority by distributing link equity throughout the site.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Dynamic URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that is generated on-the-fly and typically contains parameters that change based on user actions or database queries. Dynamic URLs often include characters like ?, &, =, and % followed by numbers or codes. These are generally less SEO-friendly than static URLs.</p>
+                        <p>Example: <code>https://example.com/products.php?category=123&sort=price</code></p>
+                    </div>
+                </div>
+                
+                <!-- E -->
+                <div id="section-e" class="glossary-section">
+                    <h2>E</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>External Link <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>A hyperlink that points from your website to a different domain. External links to authoritative sources can signal to search engines that your content is well-researched and connected to the broader web ecosystem. However, too many external links without proper attributes may drain link equity.</p>
+                    </div>
+                </div>
+                
+                <!-- F -->
+                <div id="section-f" class="glossary-section">
+                    <h2>F</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Flat Architecture <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A website structure where most pages are accessible within a few clicks from the homepage. This contrasts with deep hierarchies that require many clicks to reach deep content. Flat architectures generally help with SEO by making it easier for users and search engines to find content.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Friendly URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that is easy for humans to read and understand. Friendly URLs typically contain words rather than numbers or cryptic parameters, use hyphens to separate words, and have a logical structure that indicates the content's category or topic.</p>
+                        <p>Example: <code>https://example.com/cameras/dslr/canon-models</code></p>
+                    </div>
+                </div>
+                
+                <!-- G -->
+                <div id="section-g" class="glossary-section">
+                    <h2>G</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Global Navigation <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>The main navigation menu that appears consistently throughout a website, typically in the header. Global navigation provides internal links to the most important sections of a site and helps establish site hierarchy for both users and search engines.</p>
+                    </div>
+                </div>
+                
+                <!-- H -->
+                <div id="section-h" class="glossary-section">
+                    <h2>H</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>HTTP Status Codes <span class="category-tag url-tag">URL</span></h3>
+                        <p>Numerical codes that servers return to browsers to indicate the status of a request. Important status codes for URL optimization include:</p>
+                        <ul>
+                            <li><strong>200 (OK)</strong>: The page was successfully found and delivered</li>
+                            <li><strong>301 (Moved Permanently)</strong>: The page has permanently moved to a new URL</li>
+                            <li><strong>302 (Found/Temporary Redirect)</strong>: The page is temporarily located at a different URL</li>
+                            <li><strong>404 (Not Found)</strong>: The requested page does not exist</li>
+                            <li><strong>410 (Gone)</strong>: The page has been permanently removed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>HTML Sitemap <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A page on a website that lists and links to all or most of the site's important pages, organized in a hierarchical structure. HTML sitemaps help users find content and provide additional internal linking that helps search engines discover and understand site structure.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Hub Page <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A comprehensive resource page that links to multiple related pages on a specific topic. Hub pages are similar to pillar pages in the topic cluster model and help establish topical authority while providing a strong internal linking structure.</p>
+                    </div>
+                </div>
+                
+                <!-- I -->
+                <div id="section-i" class="glossary-section">
+                    <h2>I</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Internal Link <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A hyperlink that points from one page to another page within the same website. Internal links help users navigate, establish site hierarchy, distribute link equity, and help search engines discover and understand the relationships between pages.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Index <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The database of web pages that search engines use to respond to search queries. For a page to appear in search results, it must first be crawled and added to this index. Proper URL structure and internal linking help search engines efficiently index your content.</p>
+                    </div>
+                </div>
+                
+                <!-- K -->
+                <div id="section-k" class="glossary-section">
+                    <h2>K</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Keyword Cannibalization <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The situation where multiple pages on a website target the same keyword, causing them to compete against each other in search rankings. Proper internal linking with distinct anchor text can help differentiate similar pages and reduce cannibalization.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Keyword-Rich URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that contains relevant keywords related to the page's content. Including targeted keywords in URLs can help with SEO, but they should be used naturally and not overstuffed.</p>
+                        <p>Example: <code>https://example.com/digital-marketing/seo-beginners-guide</code></p>
+                    </div>
+                </div>
+                
+                <!-- L -->
+                <div id="section-l" class="glossary-section">
+                    <h2>L</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Link Equity (Link Juice) <span class="category-tag internal-tag">INTERNAL</span> <span class="category-tag external-tag">EXTERNAL</span></h3>
+                        <p>The SEO value that passes from one page to another through hyperlinks. Also known as "link juice." Strategic internal linking helps distribute link equity from high-authority pages to those that need a ranking boost.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Link Velocity <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The rate at which a website gains or loses links over time. A natural link velocity pattern (steady growth with occasional spikes) appears more authentic to search engines than sudden, unnatural increases.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Link Profile <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>The complete collection of links pointing to a website, including internal links between pages and external links from other sites. A healthy link profile is diverse in terms of sources, anchor text, and link types.</p>
+                    </div>
+                </div>
+                
+                <!-- M -->
+                <div id="section-m" class="glossary-section">
+                    <h2>M</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Mobile-Friendly URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that is optimized for mobile devices, typically by being shorter to accommodate smaller screens and easier to type on mobile keyboards. With mobile-first indexing, mobile-friendly URLs are increasingly important.</p>
+                    </div>
+                </div>
+                
+                <!-- N -->
+                <div id="section-n" class="glossary-section">
+                    <h2>N</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Navigation Structure <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>The organization and hierarchy of links that allow users to move through a website. This includes main navigation, footer links, breadcrumbs, and sidebar navigation. A well-planned navigation structure improves user experience and helps search engines understand site hierarchy.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Nofollow Link <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>A link with the <code>rel="nofollow"</code> attribute, which tells search engines not to pass link equity to the linked page. Nofollow links are commonly used for user-generated content, paid links, or when linking to untrusted sources.</p>
+                        <p>Example: <code>&lt;a href="https://example.com" rel="nofollow"&gt;Example&lt;/a&gt;</code></p>
+                    </div>
+                </div>
+                
+                <!-- O -->
+                <div id="section-o" class="glossary-section">
+                    <h2>O</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Orphaned Content <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>Pages that exist on a website but have no internal links pointing to them from other pages. Orphaned content is difficult for users to find and may not be discovered or indexed by search engines. Proper internal linking helps prevent orphaned content.</p>
+                    </div>
+                </div>
+                
+                <!-- P -->
+                <div id="section-p" class="glossary-section">
+                    <h2>P</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>PageRank <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>Google's original algorithm for measuring the importance of web pages based on the quantity and quality of links pointing to them. While Google no longer publicly displays PageRank scores, the concept remains a fundamental part of how search engines evaluate pages.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Parameter <span class="category-tag url-tag">URL</span></h3>
+                        <p>A variable within a URL that follows a question mark (?) and typically uses the format name=value. Parameters are often used for filtering, sorting, tracking, or session IDs. Multiple parameters are separated by ampersands (&).</p>
+                        <p>Example: <code>https://example.com/products?category=shoes&color=black&size=10</code></p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Pillar Page <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A comprehensive content page that covers a broad topic in depth and links to multiple related cluster pages that address specific aspects of the main topic. Pillar pages are the foundation of the topic cluster model for content organization and internal linking.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Path <span class="category-tag url-tag">URL</span></h3>
+                        <p>The part of a URL that follows the domain name and specifies the location of a resource on the web server. Paths often reflect the hierarchical organization of content.</p>
+                        <p>Example: In <code>https://example.com/blog/categories/seo</code>, the path is <code>/blog/categories/seo</code></p>
+                    </div>
+                </div>
+                
+                <!-- R -->
+                <div id="section-r" class="glossary-section">
+                    <h2>R</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Redirect <span class="category-tag url-tag">URL</span></h3>
+                        <p>A technique that automatically sends visitors or search engines from one URL to another. Common types of redirects include:</p>
+                        <ul>
+                            <li><strong>301 Redirect</strong>: Permanent redirect that passes most link equity</li>
+                            <li><strong>302 Redirect</strong>: Temporary redirect that passes less link equity</li>
+                            <li><strong>307 Redirect</strong>: Temporary redirect that maintains the same HTTP method</li>
+                            <li><strong>Meta Refresh</strong>: Client-side redirect implemented with HTML</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Relative URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that doesn't include the domain name or protocol and is relative to the current page location. Relative URLs are often used for internal linking as they're shorter and work across different environments (development, staging, production).</p>
+                        <p>Example: <code>../products/shoes.html</code> or <code>/about/contact.html</code></p>
+                    </div>
+                </div>
+                
+                <!-- S -->
+                <div id="section-s" class="glossary-section">
+                    <h2>S</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Siloed Structure <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A website organization method where content is grouped into distinct categories (silos) with internal linking primarily between pages in the same silo. This structure helps establish topical relevance and authority for each section.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Slug <span class="category-tag url-tag">URL</span></h3>
+                        <p>The portion of a URL that identifies a specific page in human-readable form, typically at the end of the URL. Slugs often contain keywords related to the page content and use hyphens to separate words.</p>
+                        <p>Example: In <code>https://example.com/blog/seo-url-optimization-guide</code>, the slug is <code>seo-url-optimization-guide</code></p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Sitemap XML <span class="category-tag general-tag">GENERAL</span></h3>
+                        <p>A file that lists all important URLs on a website in a format designed for search engines. XML sitemaps help search engines discover and crawl pages more efficiently. While not a replacement for good internal linking, sitemaps complement it by ensuring all important pages are found.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Static URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A URL that remains constant and doesn't change based on user actions or database queries. Static URLs typically don't contain parameters and are more SEO-friendly than dynamic URLs because they're more readable and easier to remember.</p>
+                        <p>Example: <code>https://example.com/about/our-team.html</code></p>
+                    </div>
+                </div>
+                
+                <!-- T -->
+                <div id="section-t" class="glossary-section">
+                    <h2>T</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Topic Cluster <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>A content organization model consisting of a pillar page (comprehensive guide on a broad topic) and multiple cluster pages (in-depth articles on specific aspects of the main topic) connected through internal links. This structure helps establish topical authority and improves internal linking coherence.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>Trailing Slash <span class="category-tag url-tag">URL</span></h3>
+                        <p>A forward slash (/) at the end of a URL. In some server configurations, URLs with and without trailing slashes can create duplicate content issues. It's important to be consistent with trailing slash usage and implement proper redirects.</p>
+                        <p>Example: <code>https://example.com/about/</code> vs. <code>https://example.com/about</code></p>
+                    </div>
+                </div>
+                
+                <!-- U -->
+                <div id="section-u" class="glossary-section">
+                    <h2>U</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>URL (Uniform Resource Locator) <span class="category-tag url-tag">URL</span></h3>
+                        <p>The web address that specifies the location of a resource on the internet. A standard URL consists of several components:</p>
+                        <ul>
+                            <li><strong>Protocol</strong>: https://</li>
+                            <li><strong>Subdomain</strong>: www.</li>
+                            <li><strong>Domain name</strong>: example.com</li>
+                            <li><strong>Path</strong>: /category/subcategory/</li>
+                            <li><strong>Slug</strong>: page-name</li>
+                            <li><strong>Parameters</strong>: ?param=value</li>
+                            <li><strong>Fragment</strong>: #section</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>URL Canonicalization <span class="category-tag url-tag">URL</span></h3>
+                        <p>The process of selecting the preferred version of a URL when multiple URLs could display the same content. This helps prevent duplicate content issues and consolidates link equity. Canonicalization can be implemented through 301 redirects or canonical tags.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>URL Parameter Handling <span class="category-tag url-tag">URL</span></h3>
+                        <p>The management of URL parameters to prevent duplicate content and crawl inefficiency. This can be done through Google Search Console, robots.txt directives, or canonical tags. Parameters that don't change content should generally be excluded from indexing.</p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>URL Rewriting <span class="category-tag url-tag">URL</span></h3>
+                        <p>The technique of modifying URLs (usually from complex, dynamic formats to more SEO-friendly formats) without changing the actual page content. URL rewriting is typically implemented at the server level using .htaccess files or other server configurations.</p>
+                        <p>Example: Rewriting <code>product.php?id=123</code> to <code>products/blue-widgets</code></p>
+                    </div>
+                    
+                    <div class="glossary-entry">
+                        <h3>URL Structure <span class="category-tag url-tag">URL</span></h3>
+                        <p>The format and organization of URLs on a website. A well-planned URL structure follows a logical hierarchy, uses descriptive keywords, and maintains consistency throughout the site. Good URL structure benefits both users and search engines.</p>
+                    </div>
+                </div>
+                
+                <!-- V -->
+                <div id="section-v" class="glossary-section">
+                    <h2>V</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Vanity URL <span class="category-tag url-tag">URL</span></h3>
+                        <p>A custom, branded, and typically short URL that is easy to remember and type. Vanity URLs are often used for marketing purposes, especially in print materials or spoken advertisements.</p>
+                        <p>Example: <code>nike.com/jordans</code> instead of <code>nike.com/products/basketball/air-jordan-collection</code></p>
+                    </div>
+                </div>
+                
+                <!-- W -->
+                <div id="section-w" class="glossary-section">
+                    <h2>W</h2>
+                    
+                    <div class="glossary-entry">
+                        <h3>Wayfinding <span class="category-tag internal-tag">INTERNAL</span></h3>
+                        <p>The process of helping users navigate through a website and understand their current location within the site's structure. Elements like breadcrumbs, clear navigation, and consistent internal linking contribute to good wayfinding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 SEO URL Optimization Seminar. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="page1.html">URL Structure Examples</a> | 
+            <a href="page2.html">Internal Linking Case Study</a>
+        </p>
+    </footer>
+    
+    <a href="#" class="back-to-top" id="back-to-top">↑</a>
+    
+    <script>
+        // Glossary search functionality
+        const searchInput = document.getElementById('glossary-search');
+        const glossaryEntries = document.querySelectorAll('.glossary-entry');
+        
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                glossaryEntries.forEach(entry => {
+                    const term = entry.querySelector('h3').textContent.toLowerCase();
+                    const description = entry.querySelector('p').textContent.toLowerCase();
+                    
+                    if (term.includes(searchTerm) || description.includes(searchTerm)) {
+                        entry.style.display = 'block';
+                    } else {
+                        entry.style.display = 'none';
+                    }
+                });
+            });
+        }
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        if (backToTopButton) {
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+        }
+    </script>
+</body>
+</html>
